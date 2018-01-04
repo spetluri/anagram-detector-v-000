@@ -25,9 +25,7 @@ class Anagram
 		#compare each word of the array to the word the Anagram
 		#class is initialized with
 
-		split_word = word.split("").sort()
-
-		list_of_words.select {|word| word.split("").sort() == split_word}
+		list_of_words.select {|x| x.split("").sort() == word.split("").sort()}
 
 		#to determine if they are anagagrams, try determining
 		#if they are composed of the same letters
